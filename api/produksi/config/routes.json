@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/produksis",
+      "handler": "produksi.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/produksis/count",
+      "handler": "produksi.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/produksis/:id",
+      "handler": "produksi.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/produksis",
+      "handler": "produksi.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/produksis/:id",
+      "handler": "produksi.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/produksis/:id",
+      "handler": "produksi.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

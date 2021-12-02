@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produksis",
+  "info": {
+    "name": "produksi"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kiri": {
+      "type": "integer",
+      "required": true
+    },
+    "kanan": {
+      "type": "integer",
+      "required": true
+    },
+    "tglPumping": {
+      "type": "datetime",
+      "required": true
+    },
+    "userPengguna": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

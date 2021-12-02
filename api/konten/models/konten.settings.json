@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kontens",
+  "info": {
+    "name": "konten",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "article": {
+      "type": "text"
+    },
+    "waktu": {
+      "type": "datetime"
+    },
+    "pengetik": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
